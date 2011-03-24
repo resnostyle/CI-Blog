@@ -1,0 +1,121 @@
+
+// Turbine options
+@turbine
+    compress: 0
+    plugins: backgroundgradient,resetstyle,bugfixes,borderradius
+
+        
+
+@constants
+    font_sans: Verdana, Arial, sans-serif
+    font_serif: "Times New Roman", Times, serif
+    imagePath:/assets/images //called $imagePath
+
+//
+//Fonts
+//
+
+h1
+    font-size:23px
+    padding-bottom:10px
+    padding-top:30px
+    text-decoration:underline
+
+h2
+    extends:h1
+    font-size:20px
+    text-decoration:none
+    
+h3
+    extends:h1
+    font-size:18px;
+    text-decoration:none
+//
+//Page Management
+//
+
+body
+    background-image: linear-gradient(top,#ccc,#666)
+
+#logo
+    font-size:35px
+
+#navigation
+    padding-top:15px
+    text-align:center
+
+#wrapper
+    width:600px
+    margin: auto 
+    height:100%
+    padding:25px
+    border: 1px solid #ccc
+    background-color: #fff
+    
+#footer
+    font-size:10px
+    padding-top:150px
+    
+a
+    color:red
+
+#sneak
+    display:none
+
+#content
+    width:90%
+#date
+    width:100%
+
+//
+//FORM STUFF
+//
+
+form
+    margin:0 auto
+    width:400px
+    padding:14px
+    border:solid 2px #b7ddf2
+    background:#ebf4fb
+    border-radius:4px
+    h1
+        font-size:14px
+        font-weight:bold
+        margin-bottom:8px
+    input, textarea
+        float:left
+        font-size:12px
+        padding:4px 2px
+        border:solid 1px #aacfe4
+        width:200px
+        margin:2px 0 20px 10px
+        border-radius:10px
+    p
+        font-size:11px
+        color:#666666
+        margin-bottom:20px
+        border-bottom:solid 1px #b7ddf2
+        padding-bottom:10px
+    label
+        display:block
+        text-align:right
+        width:140px
+        float:left
+    .small
+        color:#666666
+        display:block
+        font-size:11px
+        font-weight:normal
+        text-align:right
+        width:140px
+    #button
+        clear:both
+        margin-left:150px
+        width:125px
+        height:31px
+        text-align:center
+        line-height:31px
+        color:#FFFFFF
+        font-size:11px
+        font-weight:bold
+        
