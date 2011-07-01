@@ -7,8 +7,6 @@ class Active extends Controller {
         $this->is_logged_in();
         $this->load->helper('url');
         $this->load->helper('form');
-
-
     }
 
     function index() {
@@ -40,7 +38,6 @@ class Active extends Controller {
         if ($this->form_validation->run() == FALSE) {
             //the input didnt validate :(
             $this->post();
-
         }
         else {
             //$this->load->database();
@@ -54,15 +51,11 @@ class Active extends Controller {
             }
             else {
                 $this->post();
-
             }
         }
     }
 
     function settings() {
-
-
-
         $data['main_content'] = 'admin_settings';
         $this->load->view('admin_defaults/main', $data);
     }
@@ -72,14 +65,7 @@ class Active extends Controller {
         $is_logged_in = $this->session->userdata('is_logged_in');
 
         if(!isset ($is_logged_in) || $is_logged_in != true) {
-
             redirect('admin');
-
         }
-
-
-
     }
 }
-
-?>

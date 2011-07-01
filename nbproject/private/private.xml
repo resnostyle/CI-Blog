@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/var/www/adrianablogphp/application/controllers/videos.php</file>
+        <file>file:/var/www/adrianablogphp/application/views/home.php</file>
+        <file>file:/var/www/adrianablogphp/application/views/admin_defaults/mainNav.php</file>
+        <file>file:/var/www/adrianablogphp/application/controllers/home.php</file>
+        <file>file:/var/www/adrianablogphp/application/controllers/admin.php</file>
+        <file>file:/var/www/adrianablogphp/application/controllers/active.php</file>
+        <file>file:/var/www/adrianablogphp/application/models/admin_handling.php</file>
+        <file>file:/var/www/adrianablogphp/application/views/admin_settings.php</file>
+        <file>file:/var/www/adrianablogphp/application/views/admin_post.php</file>
+        <file>file:/var/www/adrianablogphp/application/views/main_defaults/header.php</file>
+    </open-files>
 </project-private>

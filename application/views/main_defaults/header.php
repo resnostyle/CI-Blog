@@ -16,13 +16,15 @@ echo doctype();
 </head>
 <body>
     <div id="wrapper">
-        <div id="logo">
-            Adriana's Blog
+        <div id="header">
+            <div id="logo">
+            Adriana's Baby Blog
         </div>
         <div id="navigation">
             <?php echo anchor('home', 'Home'); ?> |
             <?php echo anchor('gallery', 'Photo Gallery'); ?> |
             <?php echo anchor('calendar', 'Calendar'); ?> |
             <?php echo anchor('videos', 'Videos'); ?>
+        </div>
         </div>
         <div id="content">

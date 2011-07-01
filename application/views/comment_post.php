@@ -5,10 +5,6 @@
 
     <?php echo $row->date ?>
 
-
-
-
-
     <?php echo nl2br($row->post); ?>
 
 <?php endforeach; ?>

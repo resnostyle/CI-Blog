@@ -1,3 +1,4 @@
+//baby colors: (BDBDBD - grey) (594834 - brown) (EFE5D7 - cream) (93C7B5 - green) (D7F0E3 - light green)
 
 // Turbine options
 @turbine
@@ -10,7 +11,11 @@
     font_sans: Verdana, Arial, sans-serif
     font_serif: "Times New Roman", Times, serif
     imagePath:/assets/images //called $imagePath
-
+    grey:#BDBDBD
+    brown:#594834
+    cream:#EFE5D7
+    green:#93C7B5
+    ltgreen:#D7F0E3
 //
 //Fonts
 //
@@ -35,29 +40,32 @@ h3
 //
 
 body
-    background-image: linear-gradient(top,#ccc,#666)
-
+    background:$brown
+#header
+    border-bottom-left-radius:4px
+    border-bottom-right-radius:4px
+    background:$ltgreen
+    border-left, border-right, border-bottom: 2px solid $cream
 #logo
     font-size:35px
-
 #navigation
     padding-top:15px
     text-align:center
 
 #wrapper
-    width:600px
+    width:800px
     margin: auto 
     height:100%
-    padding:25px
-    border: 1px solid #ccc
-    background-color: #fff
+   //padding:25px
+   //border: 1px solid #ccc
+   //background-color: #fff
     
 #footer
     font-size:10px
     padding-top:150px
     
 a
-    color:red
+    color:ltgreen
 
 #sneak
     display:none

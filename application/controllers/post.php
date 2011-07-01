@@ -16,8 +16,7 @@ class Post extends Controller {
         $query = $this->main_handling->post_comment_page($post_id);
 
         $data['Posts'] = $query;
-
-        
+     
         $data['main_content'] = 'comment_post';
 
         $this->load->view('main_defaults/main', $data);
@@ -35,7 +34,7 @@ class Post extends Controller {
 
             if ($this->form_validation->run() == FALSE) {
                 //this person didnt validate
-                //$this->index->$x;
+                                    $this->index();
             }
 
             else {
@@ -44,6 +43,7 @@ class Post extends Controller {
                 $this->load->model('main_handling');
 
                 if($query = $this->main_handling->comment_post()) {
+
                     $this->index();
                 }
                 else {
@@ -58,6 +58,3 @@ class Post extends Controller {
     }
 
 }
-
-
-?>
