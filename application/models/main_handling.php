@@ -1,6 +1,6 @@
 <?php
 
-Class Main_handling extends Model {
+Class Main_handling extends CI_Model {
 
     function recent_posts($post_count, $post_offset) {
         $this->db->select('id, title, post, date');

@@ -1,6 +1,6 @@
 <?php
 
-Class Admin_handling extends Model {
+Class Admin_handling extends CI_Model {
 
     function login() {
         $this->db->where('username', $this->input->post('user_name'));

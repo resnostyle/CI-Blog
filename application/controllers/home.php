@@ -1,9 +1,10 @@
 <?php
 
-class Home extends Controller {
+class Home extends CI_Controller {
 
     function Home() {
-        parent::Controller();
+        //parent::_Controller();
+        parent::__construct();
     }
 
     function index() {
