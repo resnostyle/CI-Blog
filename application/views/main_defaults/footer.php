@@ -9,14 +9,12 @@
 <!-- // #wrapper -->
 
 <script>
-function googleTranslateElementInit(){
-	new google.translate.TranslateElement({
-	pageLanguage: 'en'
-	});
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  });
 }
-</script>
-<script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 </body>
