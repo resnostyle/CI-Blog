@@ -1,6 +1,6 @@
 <?php /* By Bryan W Pearson */
 
-class Videos extends Controller {
+class Videos extends CI_Controller {
 
 
     function index() {

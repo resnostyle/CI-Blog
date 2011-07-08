@@ -1,9 +1,9 @@
 <?php /* By Bryan W Pearson */
 
-class Active extends Controller {
+class Active extends CI_Controller {
 
     function  __construct() {
-        parent::Controller();
+        parent::__construct();
         $this->is_logged_in();
         $this->load->helper('url');
         $this->load->helper('form');

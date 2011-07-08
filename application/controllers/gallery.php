@@ -1,6 +1,6 @@
 <?php /* By Bryan W Pearson */
 
-class Gallery extends Controller {
+class Gallery extends CI_Controller {
 
 
     function index() {

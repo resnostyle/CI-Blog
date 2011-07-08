@@ -1,6 +1,6 @@
 <?php /* By Bryan W Pearson */
 
-class Calendar extends Controller {
+class Calendar extends CI_Controller {
 
 
     function index() {

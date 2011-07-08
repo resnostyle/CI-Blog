@@ -1,23 +1,16 @@
 <?php
+class Admin extends CI_Controller {
 
+   public function Admin() {
 
-class Admin extends Controller {
-
-    function Admin() {
-
-        parent::Controller();
+        parent::__construct();
         $this->load->helper('url');
-
     }
 
-    function index() {
-
+    public function index() {
         $is_logged_in = $this->session->userdata('is_logged_in');
-
         if(!isset ($is_logged_in) || $is_logged_in != true) {
-
             $this->load->helper('form');
-
             $data['main_content'] = 'admin_login';
             $this->load->view('admin_defaults/main', $data);
         }
@@ -29,11 +22,9 @@ class Admin extends Controller {
     function login() {
         $this->load->helper('url');
         $this->load->library('form_validation');
-
         $this->form_validation->set_message('required', 'Sweetheart, is %s empty?');
         $this->form_validation->set_rules('user_name', 'Username', 'trim|required|xss_clean');
         $this->form_validation->set_rules('pass_word', 'Password', 'trim|required');
-
 
         if ($this->form_validation->run() == FALSE) {
             //this person didnt validate
@@ -56,15 +47,13 @@ class Admin extends Controller {
             }
             else {
                 $this->index();
-
-
             }
         }
 
     }
 
 
-    function logout() {
+    public function logout() {
         $this->session->sess_destroy();
         $this->index();
     }
@@ -72,4 +61,4 @@ class Admin extends Controller {
 
 }
 
-?>
+

@@ -2,16 +2,12 @@
 
 class Home extends CI_Controller {
 
-    function Home() {
-        //parent::_Controller();
-        parent::__construct();
+   public function Home() {
+       parent::__construct();
     }
 
     function index() {
-
-
         $this->load->library('pagination');
-        $this->load->database();
         $this->load->model('main_handling');
 
         $query = $this->main_handling->recent_posts(1, 0);

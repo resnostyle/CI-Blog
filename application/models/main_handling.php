@@ -24,7 +24,7 @@ Class Main_handling extends CI_Model {
                 'name'  => $this->input->post('name'),
                 'comment'  => $this->input->post('comment'),
                 'entry_id' => $this->input->post('entry_id'),
-                'ip' => $_SERVER['REMOTE_ADDR'],
+                'ip' => $this->input->ip_address(),
                 'date' => date('m-d-Y')
 
         );
@@ -37,8 +37,7 @@ Class Main_handling extends CI_Model {
         $this->db->order_by('date', 'desc');
         $comment_Lists = $this->db->get('comment');
 
-        return $comment_Lists->result();
-        return $comment_Lists->num_rows();
+       array('result'=>$comment_Lists->result(),'num_rows'=>$comment_Lists->num_rows());
     }
 
 }
