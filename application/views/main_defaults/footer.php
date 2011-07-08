@@ -7,5 +7,17 @@
     Time: {elapsed_time} Memory: {memory_usage}
 </div>
 <!-- // #wrapper -->
+
+<script>
+function googleTranslateElementInit(){
+	new google.translate.TranslateElement({
+	pageLanguage: 'en'
+	});
+}
+</script>
+<script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+
 </body>
 </html>
