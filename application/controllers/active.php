@@ -12,10 +12,9 @@ class Active extends CI_Controller {
     function index() {
 
         $this->load->database();
-        $this->load->model('admin_handling');
+        $this->load->model('main_handling');
 
-        $query = $this->admin_handling->home_listing();
-
+        $query = $this->main_handling->recent_posts(10, 0);
         $data['Posts'] = $query;
         $data['main_content'] = 'active';
         $this->load->view('admin_defaults/main', $data);
@@ -40,13 +39,16 @@ class Active extends CI_Controller {
             $this->post();
         }
         else {
-            //$this->load->database();
+            $this->load->database();
             $this->load->model('admin_handling');
 
             if($query = $this->admin_handling->post_blog()) {
 
                 // load view pages go awesomegoodneess $this-load->view
-                echo 'post success. i meant to do something else here.';
+                echo 'great success, awesomeness here';
+		//$data['main_content'] = 'modules/success';
+		//$data['message'] = "Your post when throughly spendidly. What to do now?";
+		//$this->load->view('admin_defaults/main', $data);
 
             }
             else {
@@ -60,7 +62,7 @@ class Active extends CI_Controller {
         $this->load->view('admin_defaults/main', $data);
     }
 
-    function is_logged_in() {
+   private function is_logged_in() {
         $this->load->helper('url');
         $is_logged_in = $this->session->userdata('is_logged_in');
 
@@ -69,3 +71,5 @@ class Active extends CI_Controller {
         }
     }
 }
+
+/* End of file active.php */

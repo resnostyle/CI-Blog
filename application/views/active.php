@@ -23,9 +23,9 @@
                     <td></td>
                     <td><?php echo $row->title ?></td>
                     <td class="action">
-                            <?php echo anchor($row->posthash, 'View',array('class' => 'view')); ?>
-                            <?php echo anchor('#', 'Edit',array('class' => 'edit')); ?>
-                            <?php echo anchor('#', 'Delete',array('class' => 'delete')); ?>
+                            <?php echo anchor('view/'.$row->id, 'View',array('class' => 'view')); ?>
+                            <?php echo anchor('edit/'.$row->id, 'Edit',array('class' => 'edit')); ?>
+                            <?php echo anchor('delete/'.$row->id, 'Delete',array('class' => 'delete')); ?>
 
                     </td>
                 </tr>

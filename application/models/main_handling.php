@@ -5,7 +5,7 @@ Class Main_handling extends CI_Model {
     function recent_posts($post_count, $post_offset) {
         $this->db->select('id, title, post, date');
 
-        $this->db->order_by('date', 'desc');
+        $this->db->order_by('id', 'desc');
         $query = $this->db->get('post', $post_count, $post_offset);
         return $query->result();
     }
@@ -43,4 +43,3 @@ Class Main_handling extends CI_Model {
 }
 
 
-?>

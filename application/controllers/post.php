@@ -1,10 +1,9 @@
 <?php /* By Bryan W Pearson */
 
-class Post extends Controller {
+class Post extends CI_Controller {
 
     function Home() {
-        parent::Controller();
-
+        parent::__construct();
 
     }
 
@@ -16,7 +15,7 @@ class Post extends Controller {
         $query = $this->main_handling->post_comment_page($post_id);
 
         $data['Posts'] = $query;
-     
+
         $data['main_content'] = 'comment_post';
 
         $this->load->view('main_defaults/main', $data);
@@ -34,7 +33,7 @@ class Post extends Controller {
 
             if ($this->form_validation->run() == FALSE) {
                 //this person didnt validate
-                                    $this->index();
+                $this->index();
             }
 
             else {
