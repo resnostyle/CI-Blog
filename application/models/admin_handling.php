@@ -22,3 +22,5 @@ Class Admin_handling extends CI_Model {
         return $insert;
     }
 }
+
+/* End of file admin_handling.php */
